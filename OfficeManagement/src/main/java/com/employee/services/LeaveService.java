@@ -1,28 +1,21 @@
 package com.employee.services;
-
 import java.util.List;
-import java.util.Optional;
-
-import org.hibernate.service.spi.ServiceException;
-
-import com.employee.model.Employee;
 import com.employee.model.Leave;
 
 public interface LeaveService {
 
+	public Leave creates(long id, Leave leave);
+
+	public List <Leave> getid(long employeeId);
 	
-	public Leave putLeave(Leave  leave)throws ServiceException;
-	
-	public List<Leave> getAll();
-	
-	
-	
-	public Optional<Leave> getid(long employeeId);
-	
-	public Leave update(Leave leave);
-	
-	public void deleteall();
-	
-	
-	
+//	public Leave putLeave(Leave leave) throws ServiceException;
+
+//	public List<Leave> getAll();
+
+//	public Optional<Leave> getid(long employeeId);
+
+//	public Leave update(Leave leave);
+
+//	public void deleteall();
+
 }
